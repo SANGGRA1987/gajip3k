@@ -1,0 +1,14 @@
+Untuk Tanggal :
+<input id="tgl_oleh" name="tgl_oleh" type="text" class="form-control" style="width:100%;" >
+$("#tgl_oleh").datepicker("setDate", tgl_oleh);
+
+Untuk Teksbox/combo :
+<input id="no_oleh" name="no_oleh" type="text" class="easyui-textbox" style="width:80%;">
+$("#no_oleh").textbox('setValue',no_oleh);
+
+Untuk teks :
+<span id="nm_rincian" name="nm_rincian" type="text"  style="width:100%;"><span>
+$("#nm_rincian").text(nm_rincian);
+
+Untuk Pilihan checkbox/option:
+document.querySelector('input[name="pelihara"]:checked').value,
