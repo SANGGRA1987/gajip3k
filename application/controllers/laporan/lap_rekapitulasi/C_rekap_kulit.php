@@ -16,7 +16,7 @@ class C_rekap_kulit extends CI_Controller {
         $this->load->library('M_pdf');
         $mpdf = new m_pdf('', 'Letter-L');
         $pdfFilePath = "output_pdf_name.pdf";
-        $mpdf->pdf->SetFooter('Printed Gaji P3K on @ {DATE j-m-Y H:i:s} || Halaman {PAGENO} dari {nb}');
+        $mpdf->pdf->SetFooter('Printed Gaji  on @ {DATE j-m-Y H:i:s} || Halaman {PAGENO} dari {nb}');
         $mpdf->pdf->AddPage($orientasi);
         if (!empty($judul)) $mpdf->pdf->writeHTML($judul);
         $mpdf->pdf->WriteHTML($isi);         
@@ -228,7 +228,7 @@ class C_rekap_kulit extends CI_Controller {
 	            		</tr>
 	            		<tr>
 	                		<td align=\"left\" width=\"30%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\"><b>$nmskpd</b></td>
-	                		<td align=\"center\" width=\"40%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\">GAJI P3K UNTUK PARA PEGAWAI</td>
+	                		<td align=\"center\" width=\"40%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\">GAJI  UNTUK PARA PEGAWAI</td>
 	                		<td align=\"center\" width=\"30%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </td>
 	            		</tr>
 	            		<tr>
@@ -317,7 +317,7 @@ class C_rekap_kulit extends CI_Controller {
 	        		<table style=\"border-collapse:collapse; font-size:10px\" width=\"100%\" align=\"center\" border=\"0\" cellspacing=\"1\" cellpadding=\"1\">
 	            		<tr>
 	                		<td align=\"left\" width=\"50%\" style=\"border-left:dashed 1px gray;border-bottom:dashed 1px gray;\"><br>Catatan - catatan pembuat daftar gaji </br><br>&nbsp;</br><br>&nbsp;</br></td>
-	                		<td align=\"left\" width=\"50%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumlah P3K dan keluarga : $jumlah_tot_jiwa Jiwa</td>
+	                		<td align=\"left\" width=\"50%\" style=\"border-left:dashed 1px gray;border-right:dashed 1px gray;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jumlah  dan keluarga : $jumlah_tot_jiwa Jiwa</td>
 	            		</tr>
 	            		<tr>
 	                		<td width=\"50%\" valign=\"top\" align=\"left\" style=\"border-right:dashed 1px gray;;\">
@@ -612,7 +612,7 @@ class C_rekap_kulit extends CI_Controller {
 	                                <tr><thead>
 	                                    <td width=\"5%\" valign=\"center\" align=\"center\" valign=\"top\"></td>
 	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray; border-left: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Golongan</td>
-	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray; border-left: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Jumlah P3K</td>
+	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray; border-left: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Jumlah </td>
 	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray; border-left: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Istri/Suami</td>
 	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray; border-left: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Anak</td>
 	                                    <td width=\"8%\" style=\"border-bottom: dashed 1px gray; border-top: dashed 1px gray; border-right: dashed 1px gray;\" valign=\"center\" align=\"center\" valign=\"top\">Jumlah</td>

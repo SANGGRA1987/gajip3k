@@ -14,8 +14,8 @@ class Auth extends CI_Controller {
 			$this->load->view('login');
 		} else {
 			$data['page'] 			= "Home";
-			$data['judul'] 			= "Login SIMGAJI P3K";
-			$data['deskripsi'] 		= "Login SIMGAJI P3K";
+			$data['judul'] 			= "Login SIMGAJI ";
+			$data['deskripsi'] 		= "Login SIMGAJI ";
 			$this->template->views('home', $data);
 		}
 	}
@@ -63,8 +63,8 @@ class Auth extends CI_Controller {
 				$this->session->set_userdata($session);
 				//redirect('Home');
 				$data1['page'] 			= "Home";
-				$data1['judul'] 		= "Login SIMGAJI P3K";
-				$data1['deskripsi'] 	= "Login SIMGAJI P3K";
+				$data1['judul'] 		= "Login SIMGAJI ";
+				$data1['deskripsi'] 	= "Login SIMGAJI ";
 				$this->template->views('home', $data1);
 			}
 		} else {

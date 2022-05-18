@@ -381,7 +381,7 @@ class C_Perhitungan extends CI_Controller {
 				'$iwp','$papua','$pph','$ndisc','$bulat','$bruto','$netto','$n_khusus','$t_khusus','$tht','$jkk','$jkm','$umum','$kd_pil') ");
 						  
 		}
-        echo 'Proses Perhitungan Ulang Gaji P3K Berhasil';	
+        echo 'Proses Perhitungan Ulang Gaji  Berhasil';	
  	}
 	
 	

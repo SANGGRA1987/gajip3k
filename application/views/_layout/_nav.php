@@ -1,7 +1,7 @@
 	<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<a href="index.html"><img src="<?php echo base_url('assets/img/logo-dark.png') ?>" alt="Klorofil Logo" class="img-responsive logo"></a>
+				<a href="#"><img src="<?php echo base_url('assets/img/logo.PNG') ?>" alt="Klorofil Logo" class="img-responsive logo"></a>
 			</div>
 			<div class="container-fluid">
 				<div class="navbar-btn">
@@ -26,12 +26,12 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Bantuan</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="<?php echo base_url('utilitas/C_manual') ?>"><i class="fa fa-book"></i><span>Manual Book</span></a></li>
+								<li><a href="#"><i class="fa fa-book"></i><span>Manual Book</span></a></li>
 								<li><a href="#"><i class="fa fa-user-secret"></i><span>Kontak Admin</span></a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url('assets/img/logo.png'); ?>" class="img-circle" alt="Avatar"> <span><?php echo $this->session->userdata('nm_user');?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url('assets/img/user.png'); ?>" class="img-circle" alt="Avatar"> <span><?php echo $this->session->userdata('nm_user');?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="<?php echo base_url('utilitas/C_config') ?>"><i class="fa fa-user-o"></i> <span>Profil Saya</span></a></li>
 								<li><a class="auto" href="<?php echo base_url('utilitas/C_pengguna') ?>"><i class="fa fa-users"></i> <span>Pengguna</span></a></li>

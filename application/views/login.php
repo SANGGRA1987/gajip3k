@@ -29,15 +29,11 @@
 				<div class="auth-box ">
 					<div class="left">
 						<div class="content">
-							<div class="header">
-								<div class="logo text-center"><img src="<?php echo base_url();?>assets/img/logo-dark.png" alt="Klorofil Logo"></div>
-								
-							</div>
 							<form class="form-auth-small" method="post" action="<?php echo base_url('Auth/login') ?>">
 						    <?php
 								echo show_err_msg($this->session->flashdata('error_msg'));
 							?>
-							<p class="lead"><b>.::. Silahkan Login .::.</b></p>						
+							<p class="lead"><b> Silahkan Login </b></p>						
 								<div class="form-group">
 									<label for="signin-email" class="control-label sr-only">Username</label>
 									<input type="text" class="form-control" id="username" name="username" placeholder="Username">
@@ -62,9 +58,9 @@
 					<div class="right">
 					<div class="overlay"></div>
 						<div class="content text" align="center">
-							<h2>Sistem Informasi Manajemen</h2>
+							<h2>SIMGAJI</h2>
 							<p></p>
-							<h2>Penggajian P3K</h2>
+							<h2>Sistem Informasi Manajemen GAJI</h2>
 						</div>						
 					</div>
 					<div class="clearfix"></div>					

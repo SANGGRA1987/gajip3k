@@ -12,9 +12,9 @@ class C_Keluarga extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'page' 		=> "Data Keluarga Pegawai P3K",
-			'judul'		=> "Data Keluarga Pegawai P3K",
-			'deskripsi'	=> "Data Keluarga Pegawai P3K"
+			'page' 		=> "Data Keluarga Pegawai ",
+			'judul'		=> "Data Keluarga Pegawai ",
+			'deskripsi'	=> "Data Keluarga Pegawai "
 		);
 
 		$this->template->views('master/V_Keluarga', $data);

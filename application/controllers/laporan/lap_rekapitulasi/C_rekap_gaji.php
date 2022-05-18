@@ -27,9 +27,9 @@ class C_rekap_gaji extends CI_Controller {
 	public function index()
 	{	
 		$data = array(
-			'page'	 	=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI P3K',
-			'judul'		=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI P3K',
-			'deskripsi'	=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI P3K'
+			'page'	 	=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI ',
+			'judul'		=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI ',
+			'deskripsi'	=> 'LAPORAN REKAP DAFTAR GAJI PEGAWAI '
 		);
 
 		$this->template->views('laporan/lap_rekapitulasi/V_rekap_gaji', $data);
@@ -148,7 +148,7 @@ class C_rekap_gaji extends CI_Controller {
         		<table style=\"border-collapse:collapse;\" width=\"100%\" align=\"center\" border=\"0\" cellspacing=\"1\" cellpadding=\"1\">
             		<tr>
                 		<td></td>
-                		<td align=\"center\" colspan=\"14\" style=\"font-size:14px;border: solid 1px white;\"><B>REKAPITULASI DAFTAR GAJI PEGAWAI P3K KESELURUHAN</B></td>
+                		<td align=\"center\" colspan=\"14\" style=\"font-size:14px;border: solid 1px white;\"><B>REKAPITULASI DAFTAR GAJI PEGAWAI  KESELURUHAN</B></td>
                 	</tr>
             		<tr>
                 		<td></td>
@@ -405,7 +405,7 @@ class C_rekap_gaji extends CI_Controller {
 
 
 		        $data['prev']= $cRet;
-		        $judul  = 'LAPORAN REKAP DAFTAR GAJI PEGAWAI P3K';
+		        $judul  = 'LAPORAN REKAP DAFTAR GAJI PEGAWAI ';
 		        switch ($data['tipeCetakan']) {
 		        	case 0:
 		        		$this->_mpdf('',$cRet,10,10,10,'L');

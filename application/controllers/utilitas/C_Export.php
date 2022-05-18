@@ -6,9 +6,9 @@ class C_Export extends CI_Controller {
 	public function index()
 	{	
 		$data = array(
-			'page'	 	=> 'Export Data Gaji P3K',
-			'judul'		=> 'Export Data Gaji P3K',
-			'deskripsi'	=> 'Export Data Gaji P3K'
+			'page'	 	=> 'Export Data Gaji ',
+			'judul'		=> 'Export Data Gaji ',
+			'deskripsi'	=> 'Export Data Gaji '
 		);
 
 		$this->template->views('utilitas/V_Export', $data);
@@ -18,7 +18,7 @@ class C_Export extends CI_Controller {
 		$sql = "COPY (SELECT * FROM pegawai order by nama) TO 'D:/pegawai.csv' DELIMITER ',' CSV HEADER";
         $query = $this->db->query($sql);  
         
-        echo 'Proses Export Gaji P3K Berhasil. File disimpan di Drive D dengan nama pegawai.csv';	
+        echo 'Proses Export Gaji  Berhasil. File disimpan di Drive D dengan nama pegawai.csv';	
  	}*/
 
  	function proses(){

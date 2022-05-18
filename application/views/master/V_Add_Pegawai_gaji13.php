@@ -106,7 +106,7 @@
                 </div>
 				<div class="col-sm-12" class="panel-heading" style="padding-bottom: 10px;">
                     <div class="col-sm-3" style="padding-top: 3px;"><label>Status Pegawai </label></div>
-                    <div class="col-sm-3"><label class="fancy-radio" style="padding-top: 3px;"><input id="pns" name="s_pegawai1" value="1" type="radio"><span><i></i><label>P3K</span></label></div>
+                    <div class="col-sm-3"><label class="fancy-radio" style="padding-top: 3px;"><input id="pns" name="s_pegawai1" value="1" type="radio"><span><i></i><label></span></label></div>
 					<!-- <div class="col-sm-3"><label class="fancy-radio" style="padding-top: 3px;"><input id="cpns" name="s_pegawai1" value="2" type="radio"><span><i></i><label>CPNS</span></label></div>
 					<div class="col-sm-3"><label class="fancy-radio" style="padding-top: 3px;"><input id="pensiun" name="s_pegawai1" value="3" type="radio"><span><i></i><label>Pensiun</span></label></div> -->
                 </div>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
 				<div class="col-sm-12" style="padding-bottom: 10px;">
-                    <div class="col-sm-5" style="padding-top: 3px;"><label>T.M.T. P3K</label></div>
+                    <div class="col-sm-5" style="padding-top: 3px;"><label>T.M.T. </label></div>
                     <div class="col-sm-6">
 							<div class="input-group" style="width:80%;">
 							  <input id="tgl_pns" name="tgl_pns" type="text" class="form-control" style="width:100%;" >

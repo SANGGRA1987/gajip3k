@@ -304,7 +304,7 @@ class C_kartugaji extends CI_Controller {
                     {
 
 	                	$sql="SELECT satkerja,nip,nama,lahir,golongan,stspegawai, 
-	                		case  when stspegawai='1' then 'P3K' ELSE 'CPNS' end AS nm_stspegawai, case  when stskawin='1' then 'K11' when stskawin='2' then 'K10' when stskawin='3' then 'TK10' when stskawin='4' then 'D10' ELSE 'J10' END AS cstatus,
+	                		case  when stspegawai='1' then 'PNS' ELSE 'CPNS' end AS nm_stspegawai, case  when stskawin='1' then 'K11' when stskawin='2' then 'K10' when stskawin='3' then 'TK10' when stskawin='4' then 'D10' ELSE 'J10' END AS cstatus,
 	                		anak, CASE when kdbantu<>'6' then '1' else '0' end as njiwa1, CASE when stskawin='1' and (kdbantu<>'4' and kdbantu<>'6') then '1' else '0' end as njiwa2, case when kdbantu<>'4' and kdbantu<>'6' then anak else '0' end as njiwa3, 
 	                		gapok,tistri,tanak,(gapok+tistri+tanak) as tkeluarga,tpp,papua, tdt,tstruk,(case when left(kd_fung,1)<>'U' then tfung else 0 end) as tfung, bulat,beras,umum,
 	                		pph,askes,bruto,iwp,sewa,tabungan,hutang,lain,disc as jum_pot,netto,npwp,rekening,jkk,jkm,khusus,tht from p3k_$j$tahun $where2  order by golongan desc ,masa_tahun desc;";

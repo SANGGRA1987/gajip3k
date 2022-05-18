@@ -16,7 +16,7 @@ class C_rekap_golongan_gaji13 extends CI_Controller {
         $this->load->library('M_pdf');
         $mpdf = new m_pdf('', 'Letter-L');
         $pdfFilePath = "output_pdf_name.pdf";
-        $mpdf->pdf->SetFooter('Printed Gaji P3K on @ {DATE j-m-Y H:i:s} || Halaman {PAGENO} dari {nb}');
+        $mpdf->pdf->SetFooter('Printed Gaji  on @ {DATE j-m-Y H:i:s} || Halaman {PAGENO} dari {nb}');
         $mpdf->pdf->AddPage($orientasi);
         if (!empty($judul)) $mpdf->pdf->writeHTML($judul);
         $mpdf->pdf->WriteHTML($isi);         

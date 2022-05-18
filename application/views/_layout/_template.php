@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SIMGAJI P3K</title>
+    <title>SIMGAJI</title>
     <!-- meta -->
     <?php echo @$_meta;?>
 

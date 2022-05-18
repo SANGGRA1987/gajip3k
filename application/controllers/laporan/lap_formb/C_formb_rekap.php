@@ -230,7 +230,7 @@ class C_formb_rekap extends CI_Controller {
                 	    	<td align=\"center\" colspan=\"15\" style=\"font-size:12px;border-right:none;border-left:none;border-bottom:none;border-top:none\" ><br><b>PEMERINTAH KABUPATEN $nm_daerah</b></td>
                 		</tr>
                 		<tr>
-                	    	<td align=\"center\" colspan=\"15\" style=\"font-size:10px;border-right:none;border-left:none;border-bottom:none;border-top:none\" ><b>DAFTAR PEMBAYARAN GAJI INDUK P3K</b></td>
+                	    	<td align=\"center\" colspan=\"15\" style=\"font-size:10px;border-right:none;border-left:none;border-bottom:none;border-top:none\" ><b>DAFTAR PEMBAYARAN GAJI INDUK </b></td>
                 		</tr>
                 		<tr>
 		                    <td align=\"center\" colspan=\"15\" style=\"font-size:10px;border-right:none;border-left:none;border-bottom:none;border-top:none\" ><b>[ $nmskpd | $nm_skpd_unit ]</b></td>
@@ -298,7 +298,7 @@ class C_formb_rekap extends CI_Controller {
 						when golongan='16' then 'XVI'
 						when golongan='17' then 'XVII'
 						ELSE 'TIDAK ADA GOLONGAN' END AS NM_GOLONGAN,stspegawai, 
-                		case  when stspegawai='1' then 'P3K' ELSE 'CPNS' end AS nm_stspegawai, case  when stskawin='1' then 'K11' when stskawin='2' then 'K10' when stskawin='3' then 'TK10' when stskawin='4' then 'D10' ELSE 'J10' END AS cstatus,
+                		case  when stspegawai='1' then '' ELSE 'CPNS' end AS nm_stspegawai, case  when stskawin='1' then 'K11' when stskawin='2' then 'K10' when stskawin='3' then 'TK10' when stskawin='4' then 'D10' ELSE 'J10' END AS cstatus,
                 		anak, CASE when kdbantu<>'6' then '1' else '0' end as njiwa1, CASE when stskawin='1' and (kdbantu<>'4' and kdbantu<>'6') then '1' else '0' end as njiwa2, case when kdbantu<>'4' and kdbantu<>'6' then anak else '0' end as njiwa3, 
                 		gapok,tistri,tanak,(gapok+tistri+tanak) as tkeluarga,tpp,papua, tdt,tstruk,(case when left(kd_fung,1)<>'U' then tfung else 0 end) as tfung, bulat,beras,umum,
                 		pph,askes,bruto,iwp,sewa,tabungan,hutang,lain,disc as jum_pot,netto,npwp,rekening,jkk,jkm,khusus,tht from pegawai $where2  order by golongan desc ,masa_tahun desc;";

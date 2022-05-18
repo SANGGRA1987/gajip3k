@@ -10,7 +10,7 @@
   $(document).ready(function() {
   	
     $('#proses').click(function(){
-		$.messager.confirm('Konfirmasi','Yakin ingin mengexport data gaji p3k ???',function(r){
+		$.messager.confirm('Konfirmasi','Yakin ingin mengexport data gaji  ???',function(r){
 			if (r){
 			   window.open(urll);
 			   window.focus();

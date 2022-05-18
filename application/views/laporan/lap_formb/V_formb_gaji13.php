@@ -52,7 +52,7 @@
         <div class="col-sm-2" style="padding-top: 8px;">Pilih Cetak</div>
         <div class="col-sm-2">
           <select id="printer" class="easyui-combobox" style="width: 200%">
-			<option value="1">DAFTAR GAJI 13 P3K</option>
+			<option value="1">DAFTAR GAJI 13 </option>
 			<!--<option value="2">DAFTAR GAJI PRE PRINTED</option>-->
 		  </select>
         </div>

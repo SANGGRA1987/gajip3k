@@ -11,9 +11,9 @@ class C_Proses_gaji14 extends CI_Controller {
 	public function index()
 	{	
 		$data = array(
-			'page'	 	=> 'Proses Gaji 14 Pegawai P3K',
-			'judul'		=> 'Proses Gaji 14 Pegawai P3K',
-			'deskripsi'	=> 'Proses Gaji 14 Pegawai P3K'
+			'page'	 	=> 'Proses Gaji 14 Pegawai ',
+			'judul'		=> 'Proses Gaji 14 Pegawai ',
+			'deskripsi'	=> 'Proses Gaji 14 Pegawai '
 		);
 
 		$this->template->views('utilitas/V_Proses_gaji14', $data);
@@ -38,7 +38,7 @@ class C_Proses_gaji14 extends CI_Controller {
 		$periode = $bulan.$thn; 
 
 		$this->db->query("delete from public.pegawai_14");		
-		$sql = "select * from public.p3k_$periode";
+		$sql = "select * from public._$periode";
         $query = $this->db->query($sql);  
         
         foreach($query->result_array() as $resulte){
@@ -387,7 +387,7 @@ class C_Proses_gaji14 extends CI_Controller {
 						  
 		}	  
 		
-        echo 'Proses Gaji 14 Pegawai P3K Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
+        echo 'Proses Gaji 14 Pegawai  Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
  	}
 	
 	

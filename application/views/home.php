@@ -8,7 +8,7 @@
 		<div class="box box-info">
 			<div class="box-header with-border">
 				<i class="fa fa-briefcase"></i>
-				<h3 class="box-title">REKAPAN REALISASI SP2D GAJI INDUK </h3>				
+				<h3 class="box-title">REKAPAN REALISASI SP2D GAJI </h3>				
 			</div>
 			<div class="box-body"><canvas id="chart" width="1100" height="400"></canvas></div>
 		</div>
@@ -24,7 +24,7 @@
 		datasets : [
 			{
 			//fillColor : "rgba(215, 40, 40, 0.9)",
-			fillColor : "rgba(0,128,0)",
+			fillColor : "rgba(102,153,255,1)",
 			strokeColor : "rgba(220,220,220,1)",
 			data : [10,20,30,40,50,60,70,80,90,100,110,120]
 			}

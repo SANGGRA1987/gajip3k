@@ -11,9 +11,9 @@ class C_Kartu_gaji13 extends CI_Controller {
 	public function index()
 	{	
 		$data = array(
-			'page'	 	=> 'Pengkartuan Gaji 13 Pegawai P3K',
-			'judul'		=> 'Pengkartuan Gaji 13 Pegawai P3K',
-			'deskripsi'	=> 'Pengkartuan Gaji 13 Pegawai P3K'
+			'page'	 	=> 'Pengkartuan Gaji 13 Pegawai ',
+			'judul'		=> 'Pengkartuan Gaji 13 Pegawai ',
+			'deskripsi'	=> 'Pengkartuan Gaji 13 Pegawai '
 		);
 
 		$this->template->views('utilitas/V_Kartu_gaji13', $data);
@@ -117,7 +117,7 @@ class C_Kartu_gaji13 extends CI_Controller {
         $this->db->query("delete from public.pegawai_13_$periode");		
 		$this->db->query("insert into public.pegawai_13_$periode select * from public.pegawai_13");		  
 		
-        echo 'Proses Pengkartuan Gaji 13 Pegawai P3K Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
+        echo 'Proses Pengkartuan Gaji 13 Pegawai  Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
  	}
 	
 	

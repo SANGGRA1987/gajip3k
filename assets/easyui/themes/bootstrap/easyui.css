@@ -302,7 +302,7 @@
   filter: none;
 }
 .accordion .accordion-header-selected {
-  background: #003300;
+  background: #6699FF;
 }
 .accordion .accordion-header-selected .panel-title {
   color: #fff;
@@ -1017,7 +1017,7 @@
   color: #00438a;
 }
 .combobox-item-selected {
-  background-color: #003300;
+  background-color: #6699FF;
   color: #fff;
 }
 .combobox-icon {
@@ -1629,7 +1629,7 @@
   border-left: 1px solid #ffffff;
 }
 .tabs-header .tabs-pill li.tabs-selected a.tabs-inner {
-  background: #003300;
+  background: #6699FF;
   color: #fff;
   filter: none;
   border-color: #D4D4D4;
@@ -1915,7 +1915,7 @@
   cursor: default;
 }
 .datagrid-row-selected {
-  background: #003300;
+  background:#6699FF;
   color: #fff;
 }
 .datagrid-row-editing .textbox,
@@ -2315,7 +2315,7 @@
   padding: 0;
 }
 .calendar-selected {
-  background-color: #003300;
+  background-color: #6699FF;
   color: #fff;
   border: 1px solid #0070a9;
   padding: 0;
@@ -2443,7 +2443,7 @@
   font-size: 12px;
 }
 .progressbar-value .progressbar-text {
-  background-color: #003300;
+  background-color: #6699FF;
   color: #fff;
 }
 .searchbox-button {
@@ -3032,7 +3032,7 @@
   color: #00438a;
 }
 .tree-node-selected {
-  background: #003300;
+  background: #6699FF;
   color: #fff;
 }
 .tree-node-hidden {
@@ -3180,7 +3180,7 @@
   border-radius: 5px 5px 5px 5px;
 }
 .switchbutton-on {
-  background: #003300;
+  background: #6699FF;
   color: #fff;
 }
 .switchbutton-off {
@@ -3233,8 +3233,8 @@
   color: #0088CC;
 }
 .menu-active {
-  background-color: #003300;
-  border-color: #003300;
+  background-color: #6699FF;
+  border-color: #6699FF;
   color: #fff;
 }
 .menu-active-disabled {

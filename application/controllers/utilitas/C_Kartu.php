@@ -11,9 +11,9 @@ class C_Kartu extends CI_Controller {
 	public function index()
 	{	
 		$data = array(
-			'page'	 	=> 'Pengkartuan Gaji Pegawai P3K',
-			'judul'		=> 'Pengkartuan Gaji Pegawai P3K',
-			'deskripsi'	=> 'Pengkartuan Gaji Pegawai P3K'
+			'page'	 	=> 'Pengkartuan Gaji Pegawai ',
+			'judul'		=> 'Pengkartuan Gaji Pegawai ',
+			'deskripsi'	=> 'Pengkartuan Gaji Pegawai '
 		);
 
 		$this->template->views('utilitas/V_Kartu', $data);
@@ -38,8 +38,8 @@ class C_Kartu extends CI_Controller {
 		$periode = $bulan.$thn; 
 		//print_r($periode);die();
 
-		$sqlList = ['DROP TABLE IF EXISTS "public"."p3k_'.$periode.'";',
-			'CREATE TABLE "public"."p3k_'.$periode.'" (
+		$sqlList = ['DROP TABLE IF EXISTS "public"."_'.$periode.'";',
+			'CREATE TABLE "public"."_'.$periode.'" (
             nip_lama varchar(18) ,
 			nip varchar(18),
 			nama varchar(40) ,
@@ -115,10 +115,10 @@ class C_Kartu extends CI_Controller {
             $this->db->query($sql);
         }
 
-        $this->db->query("delete from public.p3k_$periode");		
-		$this->db->query("insert into public.p3k_$periode select * from public.pegawai");		  
+        $this->db->query("delete from public._$periode");		
+		$this->db->query("insert into public._$periode select * from public.pegawai");		  
 		
-        echo 'Proses Pengkartuan Gaji Pegawai P3K Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
+        echo 'Proses Pengkartuan Gaji Pegawai  Bulan '.$bulan.' Tahun '.$thn.' Berhasil';	
  	}
 	
 	
